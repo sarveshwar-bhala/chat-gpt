@@ -12,7 +12,7 @@ export default function Home() {
             className="flex flex-row w-full min-h-screen bg-cover bg-top bg-no-repeat"
             style={{ backgroundImage: "url('/pageBG.png')" }}
         >
-            <div className='flex flex-col gap-4 mx-10 my-12 min-h-full w-full'>
+            <div className='flex flex-col gap-3 mx-10 my-8 min-h-full w-full'>
                 <div
                     className="flex flex-row justify-between items-center rounded-xl p-6 h-fit w-[340px]"
                     style={{
@@ -43,7 +43,7 @@ export default function Home() {
                     <p className='text-[#111928] font-medium text-[18px]'>Explore GPTs</p>
                 </div>
                 <div
-                    className="flex flex-col gap-2 items-start rounded-xl p-6 h-full w-[340px]"
+                    className="flex flex-col gap-2 items-start rounded-xl p-6 pb-0 h-full w-[340px]"
                     style={{
                         background: `linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%),
                  rgba(255, 255, 255, 0.6)`,
@@ -67,7 +67,35 @@ export default function Home() {
                             className="pointer-events-none col-start-1 row-start-1 mr-3 size-5 self-center justify-self-end text-gray-400 sm:size-4"
                         />
                     </div>
+                    <div className='flex flex-col gap-3 h-[350px] overflow-auto mt-4 w-full scrollbar-hide'>
+                        <div className='flex flex-col gap-2 w-full'>
 
+                            <p className='text-black font-medium text-[16px]'>Today</p>
+                            <div className='flex flex-col gap-1 border border-gray-200 rounded-md p-4 w-full'>
+                                <p className='text-[#233178] font-medium text-[14px]'>Unraveling the Past</p>
+                                <div className='border-b border-b-gray-200 my-2' />
+                                <p className='text-[#233178] font-medium text-[14px]'>Unraveling the Past</p>
+                            </div>
+                        </div>
+                        <div className='flex flex-col gap-2 w-full'>
+
+                            <p className='text-black font-medium text-[16px]'>Yesterday</p>
+                            <div className='flex flex-col gap-1 border border-gray-200 rounded-md p-4 w-full'>
+                                <p className='text-[#233178] font-medium text-[14px]'>Math Made Easy</p>
+                                <div className='border-b border-b-gray-200 my-2' />
+                                <p className='text-[#233178] font-medium text-[14px]'>Study Squad Goals</p>
+                            </div>
+                        </div>
+                        <div className='flex flex-col gap-2 w-full'>
+
+                            <p className='text-black font-medium text-[16px]'>02 Days ago</p>
+                            <div className='flex flex-col gap-1 border border-gray-200 rounded-md p-4 w-full'>
+                                <p className='text-[#233178] font-medium text-[14px]'>Kitchen Newbie</p>
+                                <div className='border-b border-b-gray-200 my-2' />
+                                <p className='text-[#233178] font-medium text-[14px]'>Job Juggler</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div
                     className="flex flex-col justify-start items-start rounded-xl p-6 h-fit w-[340px]"
@@ -84,6 +112,9 @@ export default function Home() {
                     <p className='text-gray-500 font-normal text-[16px]'>More access to better models</p>
 
                 </div>
+            </div>
+            <div className='flex flex-col gap-3 mx-10 my-8 min-h-full w-full'>
+
             </div>
         </div>
     )
