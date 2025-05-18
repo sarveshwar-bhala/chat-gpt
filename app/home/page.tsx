@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { BsChat } from 'react-icons/bs'
+import { BsChat, BsPaperclip } from 'react-icons/bs'
 import { CiGrid41 } from 'react-icons/ci'
 import { FaRegEdit } from 'react-icons/fa'
 import { IoIosSearch } from 'react-icons/io'
@@ -9,7 +9,7 @@ import { MdArrowOutward } from 'react-icons/md'
 export default function Home() {
     return (
         <div
-            className="flex flex-row w-full min-h-screen bg-cover bg-top bg-no-repeat"
+            className="flex flex-row justify-start w-full min-h-screen bg-cover bg-top bg-no-repeat"
             style={{ backgroundImage: "url('/pageBG.png')" }}
         >
             <div className='flex flex-col gap-3 mx-10 my-8 min-h-full w-full'>
@@ -113,9 +113,44 @@ export default function Home() {
 
                 </div>
             </div>
-            <div className='flex flex-col gap-3 mx-10 my-8 min-h-full w-full'>
+            <div className='flex flex-col items-start justify-between gap-3 mx-10 my-8 min-h-full w-full'>
+                <div className='flex flex-row justify-between items-center w-full'>
+                    <div className='flex flex-row justify-star items-center w-full'>
+                        <Image
+                            src={"/logo.png"}
+                            alt=""
+                            width={100}
+                            height={100}
+                            className="w-40"
+                        />
+                    </div>
+                    <Image
+                        src={"/profile.png"}
+                        alt=""
+                        width={100}
+                        height={100}
+                        className="w-10 border border-white rounded-full"
+                    />
+                </div>
+                {/* <div className='flex flex-col justify-end items-start gap-10'>
+                    <div>
 
+                    </div>
+                    <div
+                        className="flex flex-row justify-between items-center rounded-xl p-6 h-full w-[900px]"
+                        style={{
+                            background: `linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%),
+                 rgba(255, 255, 255, 0.6)`,
+                            borderImage: 'linear-gradient(to bottom right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0)) 2',
+                        }}
+                    >
+                        <p className='text-[18px] font-medium text-gray-600'>Hi Alex, What can I help you with today?</p>
+                        <BsPaperclip />
+                    </div>
+                </div> */}
             </div>
+           
+
         </div>
     )
 }
