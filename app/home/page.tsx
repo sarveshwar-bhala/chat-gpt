@@ -3,7 +3,7 @@ import React from 'react'
 import { BsChat, BsPaperclip } from 'react-icons/bs'
 import { CiGrid41 } from 'react-icons/ci'
 import { FaRegEdit } from 'react-icons/fa'
-import { IoIosSearch } from 'react-icons/io'
+import { IoIosSearch, IoMdArrowRoundUp } from 'react-icons/io'
 import { MdArrowOutward } from 'react-icons/md'
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
             className="flex flex-row justify-start w-full min-h-screen bg-cover bg-top bg-no-repeat"
             style={{ backgroundImage: "url('/pageBG.png')" }}
         >
-            <div className='flex flex-col gap-3 mx-10 my-8 min-h-full w-full'>
+            <div className='flex flex-col gap-3 mx-10 mr-5 my-8 min-h-full w-fit'>
                 <div
                     className="flex flex-row justify-between items-center rounded-xl p-6 h-fit w-[340px]"
                     style={{
@@ -116,7 +116,7 @@ export default function Home() {
             </div>
             <div className='flex flex-col items-start justify-between gap-3 mx-10 my-8 min-h-full w-full'>
                 <div className='flex flex-row justify-between items-center w-full'>
-                    <div className='flex flex-row justify-star items-center w-full'>
+                    <div className='flex flex-row justify-center items-center w-full mr-10'>
                         <Image
                             src={"/logo.png"}
                             alt=""
@@ -135,24 +135,28 @@ export default function Home() {
                         priority
                     />
                 </div>
-                {/* <div className='flex flex-col justify-end items-start gap-10'>
-                    <div>
+                <div>
 
-                    </div>
-                    <div
-                        className="flex flex-row justify-between items-center rounded-xl p-6 h-full w-[900px]"
-                        style={{
-                            background: `linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%),
+                </div>
+                <div
+                    className="flex flex-row justify-between items-center rounded-xl p-6 h-fit w-[800px]"
+                    style={{
+                        background: `linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%),
                  rgba(255, 255, 255, 0.6)`,
-                            borderImage: 'linear-gradient(to bottom right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0)) 2',
-                        }}
-                    >
-                        <p className='text-[18px] font-medium text-gray-600'>Hi Alex, What can I help you with today?</p>
-                        <BsPaperclip />
+                        borderImage: 'linear-gradient(to bottom right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0)) 2',
+                    }}
+                >
+                    <p className='text-[18px] font-medium text-gray-600'>Hi Alex, What can I help you with today?</p>
+                    <div className='flex flex-row gap-4 items-center'>
+                        <BsPaperclip className='h-8 w-8 text-gray-400' />
+                        <div className='h-10 w-10 bg-blue-600 rounded-full p-2'>
+                            <IoMdArrowRoundUp className='h-6 w-6 text-white' />
+
+                        </div>
                     </div>
-                </div> */}
+                </div>
             </div>
-           
+
 
         </div>
     )
