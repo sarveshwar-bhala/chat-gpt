@@ -1,0 +1,90 @@
+import Image from 'next/image'
+import React from 'react'
+import { BsChat } from 'react-icons/bs'
+import { CiGrid41 } from 'react-icons/ci'
+import { FaRegEdit } from 'react-icons/fa'
+import { IoIosSearch } from 'react-icons/io'
+import { MdArrowOutward } from 'react-icons/md'
+
+export default function Home() {
+    return (
+        <div
+            className="flex flex-row w-full min-h-screen bg-cover bg-top bg-no-repeat"
+            style={{ backgroundImage: "url('/pageBG.png')" }}
+        >
+            <div className='flex flex-col gap-4 mx-10 my-12 min-h-full w-full'>
+                <div
+                    className="flex flex-row justify-between items-center rounded-xl p-6 h-fit w-[340px]"
+                    style={{
+                        background: `linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%),
+                 rgba(255, 255, 255, 0.6)`,
+                        borderImage: 'linear-gradient(to bottom right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0)) 2',
+                    }}
+                >
+                    <Image
+                        src={"/logo.png"}
+                        alt=""
+                        width={50}
+                        height={50}
+                        className="w-24"
+                    />
+                    <FaRegEdit className='h-5 w-5' />
+
+                </div>
+                <div
+                    className="flex flex-row gap-2 items-center rounded-xl p-6 h-fit w-[340px]"
+                    style={{
+                        background: `linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%),
+                 rgba(255, 255, 255, 0.6)`,
+                        borderImage: 'linear-gradient(to bottom right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0)) 2',
+                    }}
+                >
+                    <CiGrid41 className='h-5 w-5 text-[#111928]' />
+                    <p className='text-[#111928] font-medium text-[18px]'>Explore GPTs</p>
+                </div>
+                <div
+                    className="flex flex-col gap-2 items-start rounded-xl p-6 h-full w-[340px]"
+                    style={{
+                        background: `linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%),
+                 rgba(255, 255, 255, 0.6)`,
+                        borderImage: 'linear-gradient(to bottom right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0)) 2',
+                    }}
+                >
+                    <div className='flex flex-row gap-2 items-center'>
+                        <BsChat className='h-4 w-4 text-[#111928]' />
+                        <p className='text-[#111928] font-medium text-[18px]'>Chat</p>
+                    </div>
+                    <div className="mt-2 grid grid-cols-1 w-full">
+                        <input
+                            id="account-number"
+                            name="account-number"
+                            type="text"
+                            placeholder="Search"
+                            className="col-start-1 row-start-1 block w-full rounded-md bg-white py-1.5 pr-10 pl-3 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:pr-9 sm:text-sm/6"
+                        />
+                        <IoIosSearch
+                            aria-hidden="true"
+                            className="pointer-events-none col-start-1 row-start-1 mr-3 size-5 self-center justify-self-end text-gray-400 sm:size-4"
+                        />
+                    </div>
+
+                </div>
+                <div
+                    className="flex flex-col justify-start items-start rounded-xl p-6 h-fit w-[340px]"
+                    style={{
+                        background: `linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%),
+                 rgba(255, 255, 255, 0.6)`,
+                        borderImage: 'linear-gradient(to bottom right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0)) 2',
+                    }}
+                >
+                    <div className='flex flex-row justify-between items-center w-full'>
+                        <p className='text-black font-medium text-[16px]'>Upgrade plan</p>
+                        <MdArrowOutward className='h-5 w-5 text-black' />
+                    </div>
+                    <p className='text-gray-500 font-normal text-[16px]'>More access to better models</p>
+
+                </div>
+            </div>
+        </div>
+    )
+}
