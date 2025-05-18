@@ -21,6 +21,7 @@ export default function Login() {
                     width={100}
                     height={100}
                     className="w-40"
+                    priority
                 />
                 <div
                     className="flex flex-col gap-6 items-center rounded-xl p-6 w-[500px]"
@@ -59,6 +60,7 @@ export default function Login() {
                                 alt=''
                                 width={20}
                                 height={20}
+                                priority
                             />
                             <div className='flex flex-row justify-center items-center w-full'>
                                 <p className='text-[16px] text=[#475569] text-center font-medium'>Continue with Google</p>
@@ -70,6 +72,7 @@ export default function Login() {
                                 alt=''
                                 width={20}
                                 height={20}
+                                priority
                             />
                             <div className='flex flex-row justify-center items-center w-full'>
                                 <p className='text-[16px] text=[#475569] text-center font-medium'>Continue with Microsoft</p>
@@ -81,6 +84,7 @@ export default function Login() {
                                 alt=''
                                 width={20}
                                 height={20}
+                                priority
                             />
                             <div className='flex flex-row justify-center items-center w-full'>
                                 <p className='text-[16px] text=[#475569] text-center font-medium'>Continue with Apple</p>

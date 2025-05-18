@@ -13,6 +13,8 @@ export default function Header() {
                 width={100}
                 height={100}
                 className="w-40"
+                priority
+                
             />
             <button
                 onClick={()=>router.push("/login")}

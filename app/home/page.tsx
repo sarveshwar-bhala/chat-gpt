@@ -27,6 +27,7 @@ export default function Home() {
                         width={50}
                         height={50}
                         className="w-24"
+                        priority
                     />
                     <FaRegEdit className='h-5 w-5' />
 
@@ -122,6 +123,7 @@ export default function Home() {
                             width={100}
                             height={100}
                             className="w-40"
+                            priority
                         />
                     </div>
                     <Image
@@ -130,6 +132,7 @@ export default function Home() {
                         width={100}
                         height={100}
                         className="w-10 border border-white rounded-full"
+                        priority
                     />
                 </div>
                 {/* <div className='flex flex-col justify-end items-start gap-10'>

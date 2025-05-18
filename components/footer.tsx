@@ -77,6 +77,7 @@ export default function Footer() {
                         width={100}
                         height={80}
                         className="w-32"
+                        priority
                     />
                 </div>
             </div>

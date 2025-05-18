@@ -46,7 +46,7 @@ export default function HomePage() {
                                 className='h-20 w-20'
                                 width={60}
                                 height={60}
-
+                                priority
                             />
                             <Image
                                 src={"/careerExplore2.png"}
@@ -54,7 +54,7 @@ export default function HomePage() {
                                 className='h-20 w-20'
                                 width={60}
                                 height={60}
-
+                                priority
                             />
                             <Image
                                 src={"/careerExplore3.png"}
@@ -62,7 +62,7 @@ export default function HomePage() {
                                 className='h-20 w-20'
                                 width={60}
                                 height={60}
-
+                                priority
                             />
                         </div>
                         {/* <div className="bg-white rounded-md py-4 px-2 shadow-sm"> */}
@@ -124,6 +124,7 @@ export default function HomePage() {
                             className="object-fill w-full"
                             width={500}
                             height={500}
+                            priority
                         />
                         <div className="bg-white rounded-md py-4 px-2 shadow-sm m-6">
                             <p className='text-transparent bg-clip-text bg-gradient-to-r from-[#95A4FC] to-[#1C1C1C] font-bold text-sm text-center'>
@@ -145,6 +146,7 @@ export default function HomePage() {
                             className="object-contain h-[450px]"
                             width={500}
                             height={500}
+                            priority
                         />
                     </div>
                 </div>
@@ -183,6 +185,7 @@ export default function HomePage() {
                             className='px-6 pt-6'
                             height={200}
                             width={260}
+                            priority
                         />
 
 
@@ -212,6 +215,7 @@ export default function HomePage() {
                                 className='-mt-8'
                                 height={60}
                                 width={60}
+                                priority
                             />
 
                         </div>
@@ -248,6 +252,7 @@ export default function HomePage() {
                             width={80}
                             height={100}
                             className='w-[90%] mr-4'
+                            priority
                         />
                         <div
                             className="rounded-xl rounded-br-none pb-[1px] bg-gradient-to-r from-[#D9D9D9] via-[#1A81C3]/50 to-[#FF00D4]/40 w-fit"
@@ -301,6 +306,7 @@ export default function HomePage() {
                                 alt=''
                                 height={50}
                                 width={50}
+                                priority
                             />
                             <div
                                 className="rounded-xl rounded-br-none pb-[1px] bg-gradient-to-r from-[#D9D9D9] via-[#1A81C3]/50 to-[#FF00D4]/40"
