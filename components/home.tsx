@@ -44,24 +44,24 @@ export default function HomePage() {
                                 src={"/careerExplore1.png"}
                                 alt=''
                                 className='h-20 w-20'
-                                width={60}
-                                height={60}
+                                width={500}
+                                height={500}
                                 priority
                             />
                             <Image
                                 src={"/careerExplore2.png"}
                                 alt=''
                                 className='h-20 w-20'
-                                width={60}
-                                height={60}
+                                width={500}
+                                height={500}
                                 priority
                             />
                             <Image
                                 src={"/careerExplore3.png"}
                                 alt=''
                                 className='h-20 w-20'
-                                width={60}
-                                height={60}
+                                width={500}
+                                height={500}
                                 priority
                             />
                         </div>
@@ -122,8 +122,8 @@ export default function HomePage() {
                             src="/homework.png"
                             alt="Homework"
                             className="object-fill w-full"
-                            width={500}
-                            height={500}
+                            width={1000}
+                            height={1000}
                             priority
                         />
                         <div className="bg-white rounded-md py-4 px-2 shadow-sm m-6">
@@ -144,8 +144,8 @@ export default function HomePage() {
                             src="/mobile.png"
                             alt="Homework"
                             className="object-contain h-[450px]"
-                            width={500}
-                            height={500}
+                            width={1000}
+                            height={1000}
                             priority
                         />
                     </div>
@@ -183,7 +183,7 @@ export default function HomePage() {
                             src={"/iconGroup.png"}
                             alt=''
                             className='px-6 pt-6'
-                            height={200}
+                            height={500}
                             width={260}
                             priority
                         />
@@ -249,8 +249,8 @@ export default function HomePage() {
                         <Image
                             src={"/2GirlImage.png"}
                             alt=''
-                            width={80}
-                            height={100}
+                            width={500}
+                            height={500}
                             className='w-[90%] mr-4'
                             priority
                         />
