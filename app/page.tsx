@@ -10,13 +10,12 @@ export default function Home() {
       className="flex flex-col min-h-screen bg-cover bg-top bg-no-repeat"
       style={{ backgroundImage: "url('/pageBG.png')" }}
     >
-      <div className="mx-10 my-8 min-h-full">
-
+      <div className="sm:mx-10 xl:mx-auto my-8 min-h-full sm:w-full 2xl:w-[70%] max-w-7xl">
         <Header />
         <HomePage />
-        <RoadMap />  
+        <RoadMap />
         <GetStarted />
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );
