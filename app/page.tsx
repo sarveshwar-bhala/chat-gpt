@@ -16,7 +16,7 @@ export default function Home() {
   "
 
     >
-      <div className="mx-8 sm:mx-10 xl:mx-auto my-8 min-h-full sm:w-full 2xl:w-[70%] max-w-7xl">
+      <div className="mx-6 sm:mx-10 xl:mx-auto my-8 min-h-full sm:w-full 2xl:w-[70%] max-w-7xl">
         <Header />
         <HomePage />
         <div className="hidden sm:block">

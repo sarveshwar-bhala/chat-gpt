@@ -12,13 +12,13 @@ export default function Header() {
                 alt=""
                 width={100}
                 height={100}
-                className="w-40"
+                className="w-32 sm:w-40"
                 priority
                 
             />
             <button
                 onClick={()=>router.push("/login")}
-                className="px-8 py-3 border border-white rounded-md text-[#233178] bg-gradient-to-r from-[#FFFFFF] to-[#FFFFFF] bg-opacity-50"
+                className="px-4 py-2 border border-white rounded-md text-[#233178] bg-gradient-to-r from-[#FFFFFF] to-[#FFFFFF] bg-opacity-50"
             >
                 Get Started
             </button>

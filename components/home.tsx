@@ -356,7 +356,7 @@ export default function HomePage() {
                     <div className='flex flex-row gap-4'>
                         {/* <div className="flex flex-col gap-5 rounded-xl bg-gradient-to-br from-white/20 to-white/0 backdrop-blur-xl p-6 shadow-md shadow-black/10 "> */}
                         <div
-                            className="flex flex-col justify-between rounded-xl  p-4 w-1/2"
+                            className="flex flex-col justify-between rounded-xl  p-4 px-2 w-1/2"
                             style={{
                                 background: `linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%),
                  rgba(255, 255, 255, 0.6)`,
@@ -364,11 +364,11 @@ export default function HomePage() {
                             }}
                         >
 
-                            <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-[#282463] to-[#007DFC] font-bold text-xl max-w-56">
+                            <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-[#282463] to-[#007DFC] font-bold text-lg px-2">
                                 Mood-Based
                                 Conversations
                             </h2>
-                            <div className="bg-white rounded-xl rounded-br-none py-4 px-2 shadow-sm">
+                            <div className="bg-white rounded-xl rounded-br-none py-4 px-2 pr-0 shadow-sm">
                                 <p className='text-transparent bg-clip-text bg-gradient-to-r from-[#95A4FC] to-[#1C1C1C] font-bold text-sm'>
                                     Hi ALex, How are you feeling today?
                                 </p>
@@ -376,14 +376,14 @@ export default function HomePage() {
 
                         </div>
                         <div
-                            className="flex flex-col justify-between rounded-xl h-44 p-4 w-1/2"
+                            className="flex flex-col justify-between rounded-xl h-44 p-4 pr-2 w-1/2"
                             style={{
                                 background: `linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%),
                  rgba(255, 255, 255, 0.6)`,
                                 borderImage: 'linear-gradient(to bottom right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0)) 1',
                             }}
                         >
-                            <div className='flex flex-row justify-between'>
+                            <div className='flex flex-row justify-between pr-2'>
 
                                 <Image
                                     src={"/careerExplore1.png"}
@@ -405,7 +405,7 @@ export default function HomePage() {
 
                             </div>
                             {/* <div className="bg-white rounded-md py-4 px-2 shadow-sm"> */}
-                            <p className='text-[#757575]/50 font-bold text-sm'>
+                            <p className='text-[#757575]/50 font-bold text-sm w-full'>
                                 Career Exploration, College Prep, Budgeting Basics
                             </p>
                             {/* </div> */}
@@ -579,7 +579,7 @@ export default function HomePage() {
                                 >
                                     Organization and Productivity
                                 </p>
-                                <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-[#282463] to-[#007DFC] font-bold text-[28px] -mt-2">
+                                <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-[#282463] to-[#007DFC] font-bold text-[26px] -mt-2">
                                     Planner and Scheduler
                                 </h2>
                             </div>
@@ -608,8 +608,8 @@ export default function HomePage() {
                         }}
                     >
 
-                        <div className='flex flex-col gap-2 p-6'>
-                            <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-[#282463] to-[#007DFC] font-medium text-3xl max-w-full">
+                        <div className='flex flex-col items-center gap-2 p-6'>
+                            <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-[#282463] to-[#007DFC] font-medium text-2xl max-w-full">
                                 Entertainment and Fun
                             </h2>
                             <p className='text-[#757575]/50 font-bold text-md text-center w-full px-2'>
