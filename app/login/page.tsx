@@ -4,27 +4,32 @@ import { useRouter } from 'next/navigation'
 import React from 'react'
 
 export default function Login() {
-        const router = useRouter()
-    
+    const router = useRouter()
+
     return (
         <div
-            className="flex flex-col items-center justify-center w-full min-h-screen bg-cover bg-top bg-no-repeat"
-            style={{ backgroundImage: "url('/Login.png')" }}
+            className="flex flex-col items-center justify-center 
+    min-h-screen w-full overflow-hidden
+    bg-cover bg-top bg-no-repeat
+    bg-[url('/Login-Mobile.png')] 
+    sm:bg-[url('/Login.png')]
+"
+        // style={{ backgroundImage: "url('/Login.png')" }}
         >
             <div
-                className="flex flex-col items-center justify-center gap-10 w-[700px] h-[410px] bg-cover bg-center bg-no-repeat"
-                style={{ backgroundImage: "url('/loginCardBG.png')" }}
+                className="flex flex-col items-center justify-center gap-10 w-full max-w-[90%] sm:max-w-[750px] h-auto bg-contain bg-center bg-no-repeat sm:bg-[url('/loginCardBG.png')]"
+            // style={{ backgroundImage: "url('/loginCardBG.png')" }}
             >
                 <Image
                     src={"/logo.png"}
                     alt=""
-                    width={100}
-                    height={100}
+                    width={500}
+                    height={500}
                     className="w-40"
                     priority
                 />
                 <div
-                    className="flex flex-col gap-6 items-center rounded-xl p-6 w-[500px]"
+                    className="flex flex-col gap-6 items-center rounded-xl p-6 w-full max-w-[90%] sm:w-[500px]"
                     style={{
                         background: `linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%),
                  rgba(255, 255, 255, 0.6)`,
